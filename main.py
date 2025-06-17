@@ -35,7 +35,7 @@ def get_weather():
 
     return weather
 
-@app.get("/")
+@app.get("/info")
 async def get_info():
     current_datetime = datetime.now()
     formatted_date = current_datetime.strftime("%Y-%m-%d")
